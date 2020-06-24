@@ -1,15 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "../styles/Button.scss";
 
-function Button(props) {
+function Button({ outline, children, onClick }) {
   return (
-    <Link
-      className="btn btn-primary"
-      to={props.Link}
-      onClick={props.handleClick}
+    <button
+      className={
+        !outline
+          ? "btn btn-primary sd-btn"
+          : "btn btn-outline-primary sd-btn-outline"
+      }
+      onClick={onClick}
     >
-      {props.linkname}
-    </Link>
+      {children}
+    </button>
   );
 }
 

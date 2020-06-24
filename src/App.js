@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Sign_up from "./pages/Sign-up";
+import Profil from "./pages/Profil";
+import feed from "./pages/Feed";
+import question_page from "./pages/Question_page";
 import "./styles/App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends Component {
@@ -14,11 +19,11 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/login" />
-            <Route path="/Sign-up" />
-            <Route path="/Profile-page" />
-            <Route path="/feed-page" />
-            <Route path="/question-page" />
+            <Route path="/login" component={Login} />
+            <Route path="/Sign-up" component={Sign_up} />
+            <Route path="/Profile-page" component={Profil} />
+            <Route path="/feed-page" component={feed} />
+            <Route path="/question-page" component={question_page} />
           </Switch>
         </Router>
       </div>
