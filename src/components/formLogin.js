@@ -2,6 +2,8 @@ import React from 'react';
 import logomail from '../images/LogoMail.png';
 import username from '../images/LogoUsername.png'
 import password from '../images/LogoPassword.png'
+import password2 from '../images/LogoPassword2.png'
+import specialisation from '../images/LogoSpecialisation.png'
 import bio from '../images/LogoBio.png'
 import '../styles/scss/form.css'
 
@@ -35,9 +37,10 @@ function FormLogin() {
                     <label>Password</label>
                     <input placeholder='******'></input>
                 </div>
+                <img src={password2} className='password2' alt='see password'></img>
             </div>
             <div className='specialisation'>
-                <img src={password} alt='specialisation'></img>
+                <img src={specialisation} alt='specialisation'></img>
                 <div className='specialisationInput'>
                     <label>Your specialisation</label>
                     <input placeholder='Dental surgery...'></input>

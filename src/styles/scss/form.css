@@ -10,6 +10,13 @@
     flex-direction: column;
 }
 
+.password2{
+    width: 1px;
+    height: 15px;
+    translate: 60%;
+    margin-top: 30px;
+}
+
 img{
     width: 20px;
     height: 20px;
@@ -24,7 +31,7 @@ label{
 
 input{
     border: none;
-    padding: 3px 10px;
+    padding: 5px 10px;
     border-radius: 10px;
 }
 
