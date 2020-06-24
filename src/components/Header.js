@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import logo from "../images/TitleLogo.png";
 import "../styles/Header.scss";
 
-function Header() {
-  const [navOpened, setNavOpened] = useState(true);
+const Header = () => {
+  const [navOpened, setNavOpened] = useState(false);
   return (
     <>
       <nav className='_sd-navbar'>
@@ -31,6 +31,6 @@ function Header() {
       </nav>
     </>
   );
-}
+};
 
 export default Header;
