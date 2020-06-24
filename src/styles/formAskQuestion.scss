@@ -1,0 +1,26 @@
+@import './globale';
+
+.AskTextarea{
+  width: 60%;
+  height: auto;
+  resize: none;
+}
+
+.AskFormContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  font-family: 'Ubuntu';
+}
+
+.AskSubmit{
+  width: 3rem;
+  height: auto;
+  margin-top: 1%;
+}
+
+.AskButtonContainer{
+  display: block;
+  justify-content: flex-end;
+}
