@@ -1,2 +1,23 @@
 @import "./globale.scss";
 @import "~bootstrap/scss/buttons";
+
+h1.Welcome {
+  border: 1px solid white;
+  box-shadow: 10px 10px 10px 0px rgba(0.25, 0.25, 0.25, 0.25);
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  justify-content: center;
+}
+
+.Sub-home-container-button {
+  display: flex;
+  margin-bottom: 10%;
+  flex-direction: column;
+}
+
+.Sub-home-container .a {
+  color: $primary-color;
+}
