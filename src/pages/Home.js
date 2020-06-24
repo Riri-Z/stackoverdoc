@@ -13,19 +13,18 @@ class Home extends Component {
             Join the best community of healthcare Practitians !
           </h1>
         </main>
-        <div className="Sub-home-container">
-          <div className="Sub-home-container-button">
-            <Link to="/">
-              <Button outline>Create a free account</Button>
-            </Link>
-            <a href="toto">or login &rarr; </a>
-          </div>
-          <p>
-            Share your knowledge with your peers and find the answers to your
-            questions. StackOverDoc ranks responses in order of relevance, using
-            an upvote system.
-          </p>
+
+        <div className="Sub-home-container-button">
+          <Link to="/">
+            <Button>Create a free account</Button>
+          </Link>
+          <a href="toto">or login &rarr; </a>
         </div>
+        <p>
+          Share your knowledge with your peers and find the answers to your
+          questions. StackOverDoc ranks responses in order of relevance, using
+          an upvote system.
+        </p>
       </div>
     );
   }
