@@ -91,6 +91,7 @@
 
   ._sd-navbar ._sd-navbar-menu li:nth-of-type(1) {
     margin-right: 8px;
+    margin-bottom: 0;
   }
 
   ._sd-navbar ._sd-navbar-brand img {
@@ -104,5 +105,8 @@
   ._sd-navbar ._sd-navbar-menu {
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: O;
+    list-style: none;
   }
 }
