@@ -28,7 +28,7 @@
 
 .GlobalFormAskContainer {
   display: flex;
-  width: 90%;
+  width: 60%;
   padding: 10px;
   margin: 0 auto;
   border-radius: 10px;
@@ -92,6 +92,15 @@
   margin: 1%;
 }
 
+.ViewMoreButton {
+  color: #007bff;
+}
+
+.answersNumber {
+  font-size: 14px;
+  font-style: italic;
+}
+
 @media only screen and (max-width: 700px) {
   .AskTextarea {
     width: 80%;
@@ -100,9 +109,27 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .GlobalFormAskContainer {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .GlobalFormAskContainer {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .InputTag {
     width: 30%;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .form-tag {
+    padding-bottom: 3%;
   }
 }

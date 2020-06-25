@@ -4,12 +4,20 @@ import "../styles/formAskQuestion.scss";
 const Question = (props) =>{
   return(
     <>
-      <h1>{props.title}</h1>
-        <img src={props.imageUrl} alt={props.name} />
-        <p>from : {props.text}</p>   
-        <p>{props.text}</p>
-        <p>{props.answers}</p> 
-        <button className='ViewMoreButton'>View more</button>
+      <div className='globalQuestionContainer'>
+        <div className='questionHeadContainer'>
+          <h1 className='QuestionTitle'>{props.title}</h1>
+            <div>
+              <img src={props.avatar} alt={props.author} className='avatar'/>
+              <p className='answersNumber'>from : {props.author}</p>
+            </div>   
+        </div> 
+          <p className='questionText'>{props.text}</p>
+        <div className='globalAnswerContainer'>
+          <p className='answersNumber'>Answers: {props.answers}</p> 
+          <button className='btn ViewMoreButton'>View more</button>
+        </div>
+      </div>
     </>
   );
 };

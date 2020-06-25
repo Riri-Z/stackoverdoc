@@ -2,6 +2,17 @@
 @import "~bootstrap/scss/buttons";
 @import "../assets/style.css";
 
+._sd-blue-ellipse {
+  position: fixed;
+  top: -5%;
+  right: 0;
+  z-index: -10;
+}
+
+._sd-navbar a._sd-white {
+  color: white !important;
+}
+
 ._sd-navbar {
   position: relative;
   width: 100%;
@@ -25,6 +36,7 @@
 
 ._sd-navbar ._sd-navbar-menu.opened {
   list-style: none;
+  text-align: center;
   margin: 0;
   background-color: whitesmoke;
   height: 100vh;
@@ -75,12 +87,21 @@
   cursor: pointer;
 }
 
+._sd-navbar i.icon-menu._sd-white {
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
   ._sd-navbar ._sd-navbar-menu.opened {
     width: 45%;
   }
   .sd-overlay {
     width: 55%;
+  }
+
+  ._sd-blue-ellipse {
+    top: -20%;
+    z-index: -10;
   }
 }
 

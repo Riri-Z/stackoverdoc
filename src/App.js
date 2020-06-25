@@ -4,11 +4,13 @@ import Login from "./pages/Login";
 import Sign_up from "./pages/Sign-up";
 import Profil from "./pages/Profil";
 import feed from "./pages/Feed";
+import Header from "./components/Header";
 import question_page from "./pages/Question_page";
-import FormAskQuestion from "./components/formAskquestion";
 import Footer from "./components/Footer";
+import FormAskQuestion from "./components/formAskquestion";
 import "./styles/App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -18,15 +20,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/login" component={Login} />
             <Route path="/Sign-up" component={Sign_up} />
-            <Route path="/Profile-page" component={Profil} />
-            <Route path="/feed-page" component={feed} />
+            <Route path="/profile" component={Profil} />
+            <Route path="/feed" component={feed} />
             <Route path="/ask-question" component={FormAskQuestion} />
-            <Route path="/question-page" component={question_page} />
+            <Route path="/question" component={question_page} />
           </Switch>
         </Router>
         <Footer />
