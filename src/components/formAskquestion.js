@@ -28,7 +28,7 @@ const FormAskquestion = () => {
     <>
       <form>
         <div className="form-group AskFormContainer">
-          <label for="exampleFormControlTextarea1">Ask your question :</label>
+          <label for="AskTitle">Ask your question :</label>
           <textarea className="form-control AskTextarea" rows="3" placeholder="I wonder if..."></textarea>
           <div>
         <ul>
@@ -43,7 +43,7 @@ const FormAskquestion = () => {
         <FormTag onTagAdd={handleAdd} />
       </div>
           <div className="AskButtonContainer">
-            <button type="submit" class="btn mb-2 AskSubmit">
+            <button type="submit" className="btn mb-2 AskSubmit">
               {Send}
             </button>
           </div>
