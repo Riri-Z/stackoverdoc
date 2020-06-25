@@ -41,10 +41,16 @@ function FormLogin() {
                         <input placeholder='Dental surgery...'></input>
                     </div>
                 </div>
+                <div className='buttons'>
+                <a className='btn btn-primary sd-btn one' href="fff">Login</a>
+                <p>Forgot password ?</p>
+                <a className='btn btn-outline-info two' href="fff">Login</a>
+                </div>
+                
             </div>
         </form>
     )
-
+    
 }
 
 export default FormLogin;

@@ -64,6 +64,7 @@ form{
 .form{
     background-color: #fff;
     padding-top: 5px;
+    padding-bottom: 25px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -72,4 +73,21 @@ i{
     color: #1B89EE;
     font-size: 25px;
     margin: 5px;
+}
+
+.form a{
+    margin: 10px 60px;
+}
+
+.form a .one{
+    color: #fff;
+}
+
+.form a .two{
+    color: #1B89EE;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
 }
