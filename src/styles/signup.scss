@@ -46,3 +46,18 @@
 .login-text{
     padding-top: 15px;
 }
+
+.log{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.log p{
+    font-size: 14px;
+    margin-right: 0;
+}
+
+.log .btn .btn-outline-info{
+    margin-left: 0;
+}

@@ -43,9 +43,12 @@ function FormLogin() {
                 </div>
                 <div className='buttons'>
                 <a className='btn btn-primary sd-btn one' href="fff">Sign up</a>
-                <p>Forgot password ?</p>
-                <a className='btn btn-outline-info two' href="fff">Login</a>
+                <div className="log">
+                    <p>Already have an account ?</p>
+                    <a className='btn btn-outline-info two' href="fff">Login</a>
                 </div>
+                </div>
+                
                 
             </div>
         </form>
