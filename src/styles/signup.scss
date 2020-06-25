@@ -73,7 +73,7 @@
 
     .signup-page h3{
         font-size: 2rem;
-        margin-top: 40px;
+        padding-top: 40px;
         margin-left: 20px;
         text-align: center;
     }
@@ -85,7 +85,7 @@
     }
 
     div form{
-        width: 40%;
+        width: 50%;
         margin: 0 auto;
         padding-top: 30px;
     }
@@ -105,7 +105,7 @@
         margin-top: 100px;     
     }
 
-    .log-container{
+    .form-container{
         border-radius: 10px;
         background-color: #fff;
         width: 60%;
@@ -120,4 +120,10 @@
         padding-top: 100px
     }
 
+}
+
+@media screen and (max-width: 850px) {
+    .form-container img{
+        display: none;     
+    }
 }
