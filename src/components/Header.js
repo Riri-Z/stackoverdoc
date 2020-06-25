@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../images/TitleLogo.png";
 import whiteLogo from "../images/whiteTitleLogo.png";
 import ellipse from "../images/ellipse.png";
@@ -7,15 +7,16 @@ import shape from "../images/shape.png";
 import "../styles/Header.scss";
 import app from "../services/base";
 
-const Header = () => {
+const Header = (props) => {
+  const location = useLocation().pathname.substr(0);
   const [navOpened, setNavOpened] = useState(false);
   const [isHome, setIsHome] = useState(true);
 
   useEffect(() => {
-    if (window.location.pathname !== "/") {
+    if (location !== "/") {
       setIsHome(false);
     }
-  }, [isHome]);
+  }, [location]);
 
   return (
     <header className='top-nav'>
