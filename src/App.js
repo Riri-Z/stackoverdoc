@@ -7,7 +7,6 @@ import feed from "./pages/Feed";
 import Header from "./components/Header";
 import question_page from "./pages/Question_page";
 import Footer from "./components/Footer";
-import FormAskQuestion from "./components/formAskquestion";
 import "./styles/App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

@@ -16,7 +16,7 @@ const Header = () => {
   }, [isHome]);
 
   return (
-    <header>
+    <header className="top-nav">
       {isHome && (
         <picture alt='blue background' className='_sd-blue-ellipse'>
           <source srcSet={shape} media='(min-width: 768px)' />

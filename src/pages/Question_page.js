@@ -1,10 +1,8 @@
-import Header from "../components/Header";
-import React, { useState } from "react";
+import React /* useState  */ from "react";
 import "../styles/Qpages.scss";
-import Tag from "../components/tag";
 
 const Qpages = () => {
-  const [tags, setTag] = useState([]);
+  /* const [tags, setTag] = useState([]);
 
   const handleDelete = (id) => {
     const updatedTags = [...tags];
@@ -13,7 +11,7 @@ const Qpages = () => {
     updatedTags.splice(index, 1);
 
     setTag(updatedTags);
-  };
+  }; */
 
   return (
     <main className="q-page">
