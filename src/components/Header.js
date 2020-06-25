@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import logo from "../images/TitleLogo.png";
 import whiteLogo from "../images/whiteTitleLogo.png";
 import ellipse from "../images/ellipse.png";
 import shape from "../images/shape.png";
 import "../styles/Header.scss";
-import app from '../services/base';
+import app from "../services/base";
 
 const Header = () => {
   const [navOpened, setNavOpened] = useState(false);
@@ -18,7 +18,7 @@ const Header = () => {
   }, [isHome]);
 
   return (
-    <header className="top-nav">
+    <header className='top-nav'>
       {isHome && (
         <picture alt='blue background' className='_sd-blue-ellipse'>
           <source srcSet={shape} media='(min-width: 768px)' />
@@ -39,11 +39,12 @@ const Header = () => {
             <NavLink exact to='/sign-up' className='btn btn-primary sd-btn'>
               Sign Up
             </NavLink>
-            <button onClick={()=>app.auth().signOut()}>Sign out</button>
+            <button onClick={() => app.auth().signOut()}>Sign out</button>
           </li>
           <li>
             <NavLink
-              exact to='/login'
+              exact
+              to='/login'
               className={isHome ? (navOpened ? "" : "_sd-white") : ""}>
               Login
             </NavLink>
