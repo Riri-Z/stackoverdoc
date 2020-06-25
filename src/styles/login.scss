@@ -127,3 +127,9 @@
     }
 
 }
+
+@media screen and (max-width: 850px) {
+    .log-container img{
+        display: none;     
+    }
+}
