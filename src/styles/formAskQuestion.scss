@@ -24,3 +24,11 @@
   display: block;
   justify-content: flex-end;
 }
+
+@media only screen and (max-width: 600px) {
+  .AskTextarea{
+    width: 80%;
+    height: auto;
+    resize: none;
+  }
+}
