@@ -1,17 +1,21 @@
 import React from 'react';
-import FormLogin from "../components/formLogin.js";
-import '../styles/login.scss'
+import FormLogin from "../components/formSignUp.js";
+import picture from "../images/background2.png"
+import '../styles/signup.scss'
 
-class SignUp extends React.Component{
+class Login extends React.Component{
     render() {
         return (
-            <div className='login-page'>
+            <div className='signup-page'>
                 <div className='form-container'>
                     <div className='login-text'>
                         <h3>Create an account!</h3>
                         <p>Start to collaborate with us</p>
                     </div>
+                    <img src={picture} alt="doctor"/>
+                    <div className="large-screen">
                     <FormLogin/>
+                    </div>
                 </div>
                 
             </div>
@@ -20,4 +24,4 @@ class SignUp extends React.Component{
     }
 }
 
-export default SignUp;
+export default Login;

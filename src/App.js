@@ -38,6 +38,7 @@ class App extends Component {
       </AuthProvider>      
     );
   }
+
 }
 
 export default App;
