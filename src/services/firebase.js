@@ -12,5 +12,5 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
+//material ui, mui icon 
 export default firebase;
