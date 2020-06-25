@@ -1,11 +1,11 @@
 import React from 'react';
-import FormLogin from "../components/formLogin.js";
-import '../styles/login.scss'
+import FormLogin from "../components/formSignUp.js";
+import '../styles/signup.scss'
 
-class FormSignUp extends React.Component{
+class Login extends React.Component{
     render() {
         return (
-            <div className='login-page'>
+            <div className='signup-page'>
                 <div className='form-container'>
                     <div className='login-text'>
                         <h3>Create an account!</h3>
@@ -20,4 +20,4 @@ class FormSignUp extends React.Component{
     }
 }
 
-export default FormSignUp;
+export default Login;

@@ -1,0 +1,48 @@
+.signup-page{
+    position: relative;
+    background-image: url('../images/background.png');
+    background-position: 20% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup-page h3{
+    font-size: 1.2rem;
+}
+
+.signup-page p{
+    color: #63687B;
+}
+
+.bio{
+    display: none;
+}
+
+.specialisation{
+    display: none;
+}
+
+.username{
+    margin-left: -25px;
+}
+
+.signup-page h3, .signup-page p{
+    text-align: left;
+    margin-left: 10px;
+    font-family: "Ubuntu";
+}
+
+.signup-page .login-container .login-text h3{
+    
+    font-size: 1.2rem;
+}
+
+.form p{
+    color: #63687B;
+    text-align: center;
+    margin: 10px
+}
+
+.login-text{
+    padding-top: 15px;
+}
