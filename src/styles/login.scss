@@ -1,5 +1,4 @@
 .login-page{
-    position: relative;
     background-image: url('../images/background.png');
     background-position: 20% 100%;
     background-repeat: no-repeat;
@@ -45,4 +44,92 @@
 
 .login-text{
     padding-top: 15px;
+}
+
+.btn .btn-outline-primary .sd-btn-outline {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  
+    &:hover {
+      box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .login-page{
+        background-position: 20% 30%;
+    }
+
+    .buttons a{
+        margin: 0 auto;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        background-image: none;
+    }
+
+    .signup-page{
+        background-image: none;
+    }
+
+    .signup-page h3{
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .signup-page p{
+        font-size: 1.2rem;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    div form{
+        width: 40%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .form{
+        border-radius: 10px;
+       
+    }
+
+    .large-screen{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .signup-page img{
+        height: 144px;
+        margin-top: 100px;     
+    }
+
+    .log-container{
+        border-radius: 10px;
+        background-color: #fff;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        
+    }
+
+    .login-page{
+        background-color: #1B89EE;
+        height: 100vh;
+        padding-top: 100px
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .log-container img{
+        display: none;     
+    }
 }
