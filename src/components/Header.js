@@ -39,7 +39,9 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href='fdhy' className={isHome ? "_sd-white" : ""}>
+            <a
+              href='fdhy'
+              className={isHome ? (navOpened ? "" : "_sd-white") : ""}>
               Login
             </a>
           </li>
