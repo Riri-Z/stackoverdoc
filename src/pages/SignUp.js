@@ -1,10 +1,26 @@
-import React from 'react';
-import FormLogin from "../components/formSignUp.js";
+import React, { useCallback } from "react";
+import { withRouter } from "react-router";
+import app from "../services/base";
+import FormLogin from "../components/formLogin";
 import picture from "../images/background2.png"
 import '../styles/signup.scss'
 
-class Login extends React.Component{
-    render() {
+const SignUp = ({ history }) =>{
+
+  const handleSignUp = useCallback(async event => {
+    event.preventDefault();
+    const { email, password } = event.target.elements;
+    try {
+      await app
+        .auth()
+        .createUserWithEmailAndPassword(email.value, password.value);
+      history.push("/");
+    } catch (error) {
+      alert(error);
+    }
+  }, [history]);
+
+    
         return (
             <div className='signup-page'>
                 <div className='form-container'>
@@ -14,14 +30,13 @@ class Login extends React.Component{
                     </div>
                     <img src={picture} alt="doctor"/>
                     <div className="large-screen">
-                    <FormLogin/>
+                    <FormLogin onSubmit={handleSignUp}/>
                     </div>
                 </div>
                 
             </div>
             
-        )
-    }
-}
+        );
+};
 
-export default Login;
+export default withRouter(SignUp);

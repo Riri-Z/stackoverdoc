@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/form.scss'
+import { NavLink } from "react-router-dom";
 
-function FormLogin() {
+const FormLogin = () => {
     return (
         <form>
             <div className='form'>
@@ -42,11 +43,10 @@ function FormLogin() {
                     </div>
                 </div>
                 <div className='buttons'>
-                <a className='btn btn-primary sd-btn one' href="fff">Login</a>
-                <p>Forgot password ?</p>
-                <a className='btn btn-outline-primary' href="fff">Sign up</a>
-                </div>
-                
+                  <button className='btn btn-primary sd-btn one' type='submit'>Login</button>
+                  <a href='mettreunlien'>Forgot password ?</a>
+                  <button className='btn btn-outline-primary' type='submit'><NavLink to="/login" >Sign up</NavLink></button>
+                </div> 
             </div>
         </form>
     )

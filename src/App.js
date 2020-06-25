@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Sign_up from "./pages/Sign-up";
+import Sign_up from "./pages/SignUp";
 import Profil from "./pages/Profil";
 import feed from "./pages/Feed";
 import Header from "./components/Header";
@@ -33,8 +33,8 @@ class App extends Component {
             <PrivateRoute path="/question" component={question_page} />
           </Switch>
           <Footer />  
-          </Router>             
-      </div>
+        </Router>             
+        </div>
       </AuthProvider>      
     );
   }
