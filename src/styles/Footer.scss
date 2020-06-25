@@ -1,0 +1,49 @@
+@import "./globale";
+@import "~bootstrap/scss/buttons";
+@import "../assets/style.css";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  margin: 5px 5px;
+}
+
+.link-footer {
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.link-footer:hover,
+.link-footer:focus,
+.link-footer:active {
+  color: white;
+}
+
+.coffee-p {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 740px) {
+  .footer div {
+    flex-direction: row;
+    align-items: center;
+  }
+  .coffee-p {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -6,6 +6,7 @@ import Profil from "./pages/Profil";
 import feed from "./pages/Feed";
 import question_page from "./pages/Question_page";
 import FormAskQuestion from "./components/formAskquestion";
+import Footer from "./components/Footer";
 import "./styles/App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends Component {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path="/question-page" component={question_page} />
           </Switch>
         </Router>
+        <Footer />
       </div>
     );
   }
