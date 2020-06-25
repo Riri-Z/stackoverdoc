@@ -16,7 +16,7 @@ class Home extends Component {
 
         <div className="Sub-home-container-button">
           <Link to="/">
-            <Button>Create a free account</Button>
+            <Button outline>Create a free account</Button>
           </Link>
           <a href="toto">or login &rarr; </a>
         </div>

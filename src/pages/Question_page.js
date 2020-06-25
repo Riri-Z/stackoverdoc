@@ -58,13 +58,7 @@ const Qpages = () => {
               rows="3"
               placeholder="I wonder if..."
             ></textarea>
-            <div className="QuestionContainer">
-              <ul>
-                {tags.map((tag) => (
-                  <Tag key={tag.id} details={tag} onDelete={handleDelete} />
-                ))}
-              </ul>
-            </div>
+            <div className="QuestionContainer"></div>
             <button type="submit" className="btn mb-2 AskSubmit">
               <i className="icon-send"></i>
             </button>
