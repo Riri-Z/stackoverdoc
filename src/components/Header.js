@@ -31,9 +31,9 @@ const Header = (props) => {
         </picture>
       )}
       <nav className='_sd-navbar'>
-        <a className='_sd-navbar-brand' href='sof'>
+        <NavLink exact to='/' className='_sd-navbar-brand' href='sof'>
           <img src={isHome ? whiteLogo : logo} alt='stackoverdoc' />
-        </a>
+        </NavLink>
         <ul
           className={navOpened ? "_sd-navbar-menu opened" : "_sd-navbar-menu"}>
           <li>
