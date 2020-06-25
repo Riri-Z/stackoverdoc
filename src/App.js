@@ -1,12 +1,13 @@
 import React from "react";
-import Profil from "./pages/Profil";
 import Header from "./components/Header";
+import Feed from "./pages/Feed";
+import "./styles/App.scss";
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <Profil />
+      <Feed />
     </div>
   );
 }
