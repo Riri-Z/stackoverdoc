@@ -20,6 +20,7 @@ const SignUp = ({ history }) =>{
     }
   }, [history]);
 
+ 
     
         return (
             <div className='signup-page'>
