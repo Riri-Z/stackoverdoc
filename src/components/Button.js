@@ -9,8 +9,7 @@ function Button({ outline, children, onClick }) {
           ? "btn btn-primary sd-btn"
           : "btn btn-outline-primary sd-btn-outline"
       }
-      onClick={onClick}
-    >
+      onClick={onClick}>
       {children}
     </button>
   );

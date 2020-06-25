@@ -25,7 +25,6 @@
 
 ._sd-navbar ._sd-navbar-menu.opened {
   list-style: none;
-  padding: 0;
   margin: 0;
   background-color: whitesmoke;
   height: 100vh;
@@ -36,6 +35,7 @@
   bottom: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 40px;
   z-index: 99999;
 }
