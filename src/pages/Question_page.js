@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import React /* , { useState }  */ from "react";
 import "../styles/Qpages.scss";
+import FormAskquestion from "../components/formAskquestion";
 
 const Qpages = () => {
   return (
@@ -37,7 +38,7 @@ const Qpages = () => {
           </p>
         </div>
         <div className="AreaAnswer">
-          <input className="BoxAnswer"></input>
+          <FormAskquestion />
         </div>
       </div>
     </>
