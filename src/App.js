@@ -5,6 +5,7 @@ import Sign_up from "./pages/Sign-up";
 import Profil from "./pages/Profil";
 import feed from "./pages/Feed";
 import question_page from "./pages/Question_page";
+import FormAskQuestion from "./components/formAskquestion";
 import "./styles/App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/Sign-up" component={Sign_up} />
             <Route path="/Profile-page" component={Profil} />
             <Route path="/feed-page" component={feed} />
+            <Route path="/ask-question" component={FormAskQuestion} />
             <Route path="/question-page" component={question_page} />
           </Switch>
         </Router>
