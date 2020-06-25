@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Button from "../components/Button";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/Home.scss";
 import docTech from "../images/doc-tech.png";
+
 class Home extends Component {
   render() {
     return (
@@ -14,10 +15,10 @@ class Home extends Component {
         </main>
 
         <div className="Sub-home-container-button">
-          <Link to="/">
+          <NavLink to="/sign-up">
             <Button outline>Create a free account</Button>
-          </Link>
-          <a href="toto">or login &rarr; </a>
+          </NavLink>
+          <NavLink to="/login">or login &rarr; </NavLink>
         </div>
         <img src={docTech} alt="stackOverDoc" className="background-img-home" />
         <p>

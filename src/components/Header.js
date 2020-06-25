@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from 'react-router-dom';
 import logo from "../images/TitleLogo.png";
 import whiteLogo from "../images/whiteTitleLogo.png";
 import ellipse from "../images/ellipse.png";
 import shape from "../images/shape.png";
 import "../styles/Header.scss";
+import app from '../services/base';
 
 const Header = () => {
   const [navOpened, setNavOpened] = useState(false);
@@ -34,16 +36,17 @@ const Header = () => {
         <ul
           className={navOpened ? "_sd-navbar-menu opened" : "_sd-navbar-menu"}>
           <li>
-            <a href='fdhy' className='btn btn-primary sd-btn'>
+            <NavLink exact to='/sign-up' className='btn btn-primary sd-btn'>
               Sign Up
-            </a>
+            </NavLink>
+            <button onClick={()=>app.auth().signOut()}>Sign out</button>
           </li>
           <li>
-            <a
-              href='fdhy'
+            <NavLink
+              exact to='/login'
               className={isHome ? (navOpened ? "" : "_sd-white") : ""}>
               Login
-            </a>
+            </NavLink>
           </li>
         </ul>
         {navOpened && (

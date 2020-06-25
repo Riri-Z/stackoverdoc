@@ -8,6 +8,8 @@ import Header from "./components/Header";
 import question_page from "./pages/Question_page";
 import Footer from "./components/Footer";
 import "./styles/App.scss";
+import { AuthProvider } from "./services/Auth";
+import PrivateRoute from "./services/PrivateRoute";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
@@ -18,20 +20,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
+      <AuthProvider>
+        <div className="App">       
         <Router>
+          <Header />         
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/login" component={Login} />
-            <Route path="/Sign-up" component={Sign_up} />
-            <Route path="/profile" component={Profil} />
-            <Route path="/feed" component={feed} />
-            <Route path="/question" component={question_page} />
+            <Route path="/sign-up" component={Sign_up} />
+            <PrivateRoute path="/profile" component={Profil} />
+            <PrivateRoute path="/feed" component={feed} />
+            <PrivateRoute path="/question" component={question_page} />
           </Switch>
-        </Router>
-        <Footer />
+          <Footer />  
+          </Router>             
       </div>
+      </AuthProvider>      
     );
   }
 }
