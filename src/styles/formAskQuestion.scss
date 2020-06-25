@@ -1,4 +1,5 @@
 @import './globale';
+@import '../assets/style.css';
 
 .AskTextarea{
   width: 60%;
@@ -12,6 +13,7 @@
   align-items: center;
   margin: 1em;
   font-family: 'Ubuntu';
+  
 }
 
 .AskSubmit{
@@ -25,10 +27,36 @@
   justify-content: flex-end;
 }
 
-@media only screen and (max-width: 600px) {
+.Tagbutton{
+  border: none;
+  background-color: transparent;
+}
+
+.AddTagButton{
+  border: none;
+  border-radius: 5em;
+  background-color: #cbddf7;
+}
+
+.InputTag{
+  border: none;
+}
+
+.icon-send{
+  color: #007bff;
+}
+
+@media only screen and (max-width: 700px) {
   .AskTextarea{
     width: 80%;
     height: auto;
     resize: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .InputTag{
+    width: 30%;
+    height: auto;
   }
 }

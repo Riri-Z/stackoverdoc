@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../styles/formAskQuestion.scss';
 
 const FormTag = ({onTagAdd}) => {
   const [newTag, setnewTag] = useState('');
@@ -21,12 +22,13 @@ const FormTag = ({onTagAdd}) => {
     return (
       <form onSubmit={handleSubmit}>
         <input
+          className='InputTag'
           value={newTag}
           onChange={handleChange}
           type="text"
           placeholder="Add a tag"
         />
-        <button>Submit</button>
+        <button className='AddTagButton'>+</button>
       </form>
     );
   };

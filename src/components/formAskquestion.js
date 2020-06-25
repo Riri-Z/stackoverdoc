@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../styles/formAskQuestion.scss';
-import Send from '../images/Send.png';
 import Tag from "./tag";
 import FormTag from "./formTag";
 
@@ -31,20 +30,20 @@ const FormAskquestion = () => {
           <label for="AskTitle">Ask your question :</label>
           <textarea className="form-control AskTextarea" rows="3" placeholder="I wonder if..."></textarea>
           <div>
-        <ul>
-          {tags.map(tag => (
-            <Tag
-              key={tag.id}
-              details={tag}
-              onDelete={handleDelete}
-            />
-          ))}
-        </ul>
-        <FormTag onTagAdd={handleAdd} />
-      </div>
+            <ul>
+              {tags.map(tag => (
+                <Tag
+                  key={tag.id}
+                  details={tag}
+                  onDelete={handleDelete}
+                />
+              ))}
+            </ul>
+            <FormTag onTagAdd={handleAdd} />
+          </div>
           <div className="AskButtonContainer">
             <button type="submit" className="btn mb-2 AskSubmit">
-              {Send}
+              <i className='icon-send'></i>
             </button>
           </div>
         </div>
