@@ -26,25 +26,31 @@ const FormAskquestion = () => {
 
   return (
     <>
-      <div className='GlobalFormAskContainer'>
+      <div className="GlobalFormAskContainer">
         <form className="form-group AskFormContainer">
-          <label for="AskTitle" className='AskTitle'>Ask your question :</label>
-          <textarea className="form-control AskTextarea" rows="3" placeholder="I wonder if..."></textarea>
-          <div className='QuestionContainer'>
+          <label for="AskTitle" className="AskTitle">
+            Ask your question :
+          </label>
+          <textarea
+            className="form-control AskTextarea"
+            rows="3"
+            placeholder="I wonder if..."
+          ></textarea>
+          <div className="QuestionContainer">
             <ul>
               {tags.map((tag) => (
                 <Tag key={tag.id} details={tag} onDelete={handleDelete} />
               ))}
             </ul>
           </div>
-          <button type='submit' className='btn mb-2 AskSubmit'>
-            <i className='icon-send'></i>
+          <button type="submit" className="btn mb-2 AskSubmit">
+            <i className="icon-send"></i>
           </button>
         </form>
         <FormTag onTagAdd={handleAdd} />
-        <form className='SearchForm'>
-          <input placeholder="Search a topic..." className='TopicInput'></input>
-          <button className='btn btn-primary'>Search</button>
+        <form className="SearchForm">
+          <input placeholder="Search a topic..." className="TopicInput"></input>
+          <button className="btn btn-primary">Search</button>
         </form>
       </div>
     </>

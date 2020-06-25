@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import '../styles/formAskQuestion.scss';
+import "../styles/formAskQuestion.scss";
 
-const FormTag = ({onTagAdd}) => {
-  const [newTag, setnewTag] = useState('');
+const FormTag = ({ onTagAdd }) => {
+  const [newTag, setnewTag] = useState("");
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     setnewTag(event.currentTarget.value);
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     const id = new Date().getTime();
@@ -16,21 +16,21 @@ const FormTag = ({onTagAdd}) => {
 
     onTagAdd({ id, name });
 
-    setnewTag('');
+    setnewTag("");
   };
 
-    return (
-      <form onSubmit={handleSubmit} className="form-tag">
-        <input
-          className='InputTag'
-          value={newTag}
-          onChange={handleChange}
-          type="text"
-          placeholder="Add a tag"
-        />
-        <button className='AddTagButton'>+</button>
-      </form>
-    );
-  };
+  return (
+    <form onSubmit={handleSubmit} className="form-tag">
+      <input
+        className="InputTag"
+        value={newTag}
+        onChange={handleChange}
+        type="text"
+        placeholder="Add a tag"
+      />
+      <button className="AddTagButton">+</button>
+    </form>
+  );
+};
 
 export default FormTag;

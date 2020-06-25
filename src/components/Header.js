@@ -16,7 +16,7 @@ const Header = () => {
   }, [isHome]);
 
   return (
-    <>
+    <header>
       {isHome && (
         <picture alt='blue background' className='_sd-blue-ellipse'>
           <source srcSet={shape} media='(min-width: 768px)' />
@@ -56,7 +56,7 @@ const Header = () => {
           className={isHome ? "icon-menu _sd-white" : "icon-menu"}
           onClick={() => setNavOpened(!navOpened)}></i>
       </nav>
-    </>
+    </header>
   );
 };
 

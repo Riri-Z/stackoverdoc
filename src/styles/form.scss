@@ -1,6 +1,11 @@
 @import "./globale.scss";
 @import "../assets/style.css";
 
+
+.p-page {
+  min-height: 100vh;
+}
+
 ._sd-form {
   width: 95%;
   margin: 0 auto;
@@ -105,5 +110,6 @@
     position: absolute;
     right: 0;
     height: 100%;
+    min-height: 100vh;
   }
 }

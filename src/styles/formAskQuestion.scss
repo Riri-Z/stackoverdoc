@@ -1,21 +1,21 @@
-@import './globale';
-@import '../assets/style.css';
+@import "./globale";
+@import "../assets/style.css";
 
-.AskTextarea{
+.AskTextarea {
   resize: none;
   width: 80%;
   border: none;
   outline: none;
 }
 
-.AskTitle{
+.AskTitle {
   padding-top: 1%;
 }
 
-.AskFormContainer{
+.AskFormContainer {
   display: flex;
   flex-direction: column;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   box-shadow: 0 0 2em #c9d8f0;
   width: 100%;
   padding: 10px;
@@ -26,7 +26,7 @@
   align-self: flex-start;
 }
 
-.GlobalFormAskContainer{
+.GlobalFormAskContainer {
   display: flex;
   width: 60%;
   padding: 10px;
@@ -37,13 +37,13 @@
   position: relative;
 }
 
-.QuestionContainer{
+.QuestionContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.AskSubmit{
+.AskSubmit {
   width: 3rem;
   height: auto;
   align-self: flex-end;
@@ -58,12 +58,12 @@
   justify-content: space-between;
 }
 
-.Tagbutton{
+.Tagbutton {
   border: none;
   background-color: transparent;
 }
 
-.AddTagButton{
+.AddTagButton {
   border: none;
   border-radius: 50%;
   line-height: 8px;
@@ -71,38 +71,38 @@
   text-align: center;
 }
 
-.InputTag{
+.InputTag {
   border: none;
-  outline:none;
+  outline: none;
   flex-grow: 1;
   background-color: whitesmoke;
   border-radius: 20px;
 }
 
-.icon-send{
+.icon-send {
   color: #007bff;
 }
 
-.TopicInput{
+.TopicInput {
   border: none;
   outline: none;
 }
 
-.SearchForm{
+.SearchForm {
   margin: 1%;
 }
 
-.ViewMoreButton{
-  color:#007bff;
+.ViewMoreButton {
+  color: #007bff;
 }
 
-.answersNumber{
+.answersNumber {
   font-size: 14px;
   font-style: italic;
 }
 
 @media only screen and (max-width: 700px) {
-  .AskTextarea{
+  .AskTextarea {
     width: 80%;
     height: auto;
     resize: none;
@@ -110,29 +110,26 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .GlobalFormAskContainer{
+  .GlobalFormAskContainer {
     width: 90%;
   }
 }
-
-
 
 @media only screen and (max-width: 620px) {
-  .GlobalFormAskContainer{
+  .GlobalFormAskContainer {
     width: 90%;
   }
 }
 
-
 @media only screen and (max-width: 450px) {
-  .InputTag{
+  .InputTag {
     width: 30%;
     height: auto;
   }
 }
 
 @media only screen and (max-width: 393px) {
-  .form-tag{
+  .form-tag {
     padding-bottom: 3%;
   }
 }
