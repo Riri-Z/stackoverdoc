@@ -8,8 +8,8 @@ class Login extends React.Component{
             <div className='login-page'>
                 <div className='form-container'>
                     <div className='login-text'>
-                        <h3>Welcome Doctor Doe!</h3>
-                        <p>Sign in to continue</p>
+                        <h3>Create an account!</h3>
+                        <p>Start to collaborate with us</p>
                     </div>
                     <FormLogin/>
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Login from "./pages/Login";
+import SignUp from "./pages/Sign-up";
 import Header from "./components/Header";
 import "./styles/App.scss";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Login />
+      <SignUp />
     </div>
   )
 }
