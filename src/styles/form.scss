@@ -91,3 +91,120 @@ i{
     display: flex;
     flex-direction: column;
 }
+=======
+@import "./globale.scss";
+@import "../assets/style.css";
+
+
+.p-page {
+  min-height: 100vh;
+}
+
+._sd-form {
+  width: 95%;
+  margin: 0 auto;
+}
+
+._sd-form .username,
+._sd-form .mail,
+._sd-form .password,
+._sd-form .specialisation,
+._sd-form .bio {
+  display: flex;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.-sd_blue {
+  display: none;
+}
+
+._sd-form ._sd-avatar {
+  width: 80px;
+  margin: 40px 30px 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+._sd-form ._sd-avatar img {
+  border-radius: 10px;
+}
+
+._sd-form i {
+  color: $primary-color;
+}
+
+._sd-form .username i,
+._sd-form .mail i,
+._sd-form .password i,
+._sd-form .specialisation i,
+._sd-form .bio i {
+  font-size: 1.5rem;
+  justify-self: flex-start;
+  margin-right: 16px;
+}
+
+._sd-form .usernameInput,
+.mailInput,
+.passwordInput,
+.specialisationInput,
+.bioInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+._sd-form .password2 {
+  width: 15px;
+  height: 15px;
+  translate: 60%;
+  margin-top: 30px;
+}
+
+._sd-form label {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+._sd-form input {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  &:focus {
+    outline: #1b89ee;
+    box-shadow: 0 0 1px #1b89ee, 0 0 3px #1b89ee, 0 0 5px #1b89ee;
+  }
+}
+
+._sd-form textarea {
+  width: 240px;
+  height: 240px;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  &:focus {
+    outline: #1b89ee;
+    box-shadow: 0 0 1px #1b89ee, 0 0 3px #1b89ee, 0 0 5px #1b89ee;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  ._sd-form {
+    width: 50%;
+    position: absolute;
+    left: 0;
+  }
+
+  ._sd-blue {
+    background-color: $primary-color;
+    display: block;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    min-height: 100vh;
+  }
+}
+
