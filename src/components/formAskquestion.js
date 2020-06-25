@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../styles/formAskQuestion.scss";
 import Tag from "./tag";
 import FormTag from "./formTag";
-import QuestionList from "./questionList";
 
 const FormAskquestion = () => {
   const [tags, setTag] = useState([]);
@@ -48,7 +47,6 @@ const FormAskquestion = () => {
           <button className='btn btn-primary'>Search</button>
         </form>
       </div>
-      <QuestionList/>
     </>
   );
 };

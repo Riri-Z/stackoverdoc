@@ -92,6 +92,15 @@
   margin: 1%;
 }
 
+.ViewMoreButton{
+  color:#007bff;
+}
+
+.answersNumber{
+  font-size: 14px;
+  font-style: italic;
+}
+
 @media only screen and (max-width: 700px) {
   .AskTextarea{
     width: 80%;
@@ -104,5 +113,11 @@
   .InputTag{
     width: 30%;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .form-tag{
+    padding-bottom: 3%;
   }
 }
