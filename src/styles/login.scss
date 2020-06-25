@@ -1,0 +1,38 @@
+.login-page{
+    position: relative;
+    background-image: url('../images/background.png');
+    background-position: 20% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bio{
+    display: none;
+}
+
+.username{
+    display: none;
+}
+
+.specialisation{
+    display: none;
+}
+
+.login-page h3, .login-page p{
+    text-align: left;
+    margin-left: 10px;
+    font-family: "Ubuntu";
+}
+
+.login-page .login-container .login-text h3{
+    
+    font-size: 1.2rem;
+}
+
+.login-page p{
+    color: #63687B;
+}
+
+.login-text{
+    padding-top: 15px;
+}

@@ -1,3 +1,6 @@
+@import './globale.scss';
+@import '../assets/style.css';
+
 .username, .mail, .password, .specialisation, .bio {
     display: flex;
     flex-direction: row;
@@ -10,28 +13,23 @@
     flex-direction: column;
 }
 
-.password2{
-    width: 15px;
-    height: 15px;
-    translate: 60%;
-    margin-top: 30px;
+.mail{
+    margin-left: -30px;
 }
 
-img{
-    width: 20px;
-    height: 20px;
-    translate: -60%;
-    margin-top: 5px;
+.icon-remove_red_eye{
+    translate: 50%;
+    margin-top: 35px;
 }
 
 label{
     text-align: left;
-    margin-bottom: 5px;
+    
 }
 
 input{
     border: none;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 10px;
 }
 
@@ -57,4 +55,21 @@ input:focus{
 textarea:focus{
     outline: #1B89EE;
     box-shadow: 0 0 1px  #1B89EE,0 0 3px  #1B89EE,0 0 5px  #1B89EE;
+}
+
+form{
+    padding-top: 200px;
+}
+
+.form{
+    background-color: #fff;
+    padding-top: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+i{
+    color: #1B89EE;
+    font-size: 25px;
+    margin: 5px;
 }
