@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Question from "./question";
+import { useEffect } from "react";
+import fb from "../services/base";
 
-const questions = [
+/* const questions = [
   {
     title: "My question",
     text:
@@ -34,20 +36,37 @@ const questions = [
     avatar: "https://randomuser.me/api/portraits/women/87.jpg",
     answers: 20,
   },
-];
+]; */
 
-const QuestionsList = () => (
-  <>
-    {questions.map((item) => (
-      <Question
-        title={item.title}
-        avatar={item.avatar}
-        author={item.author}
-        text={item.text}
-        answers={item.answers}
-      />
-    ))}
-  </>
-);
+const QuestionsList = () => {
+  const [questions, setQuestions] = useState([]);
+  useEffect(() => {
+    const unsubscribe = fb
+      .firestore()
+      .collection("questions")
+      .onSnapshot((s) => {
+        setQuestions(
+          s.docs.map((question) => {
+            return { id: question.id, ...question.data() };
+          })
+        );
+      });
+
+    return () => unsubscribe();
+  }, []);
+  return (
+    <>
+      {questions.map((item) => (
+        <Question
+          title={item.title}
+          avatar={item.avatar}
+          author={item.author}
+          content={item.content}
+          answers={item.answers}
+        />
+      ))}
+    </>
+  );
+};
 
 export default QuestionsList;
