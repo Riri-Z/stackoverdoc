@@ -1,3 +1,97 @@
+@import './globale.scss';
+@import '../assets/style.css';
+
+.username, .mail, .password, .specialisation, .bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.usernameInput, .mailInput, .passwordInput, .specialisationInput, .bioInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.mail{
+    margin-left: -30px;
+}
+
+.icon-remove_red_eye{
+    translate: 50%;
+    margin-top: 35px;
+}
+
+label{
+    text-align: left;
+    
+}
+
+input{
+    border: none;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+textarea{
+    width: 240px;
+    height: 240px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+textarea::placeholder{
+    font-family: "Ubuntu";
+}
+
+input:focus{
+    outline: #1B89EE;
+    box-shadow: 0 0 1px  #1B89EE,0 0 3px  #1B89EE,0 0 5px  #1B89EE;
+}
+
+textarea:focus{
+    outline: #1B89EE;
+    box-shadow: 0 0 1px  #1B89EE,0 0 3px  #1B89EE,0 0 5px  #1B89EE;
+}
+
+form{
+    padding-top: 200px;
+}
+
+.form{
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+i{
+    color: #1B89EE;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.form a{
+    margin: 10px 60px;
+}
+
+.form a .one{
+    color: #fff;
+}
+
+.form a .two{
+    color: #1B89EE;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+=======
 @import "./globale.scss";
 @import "../assets/style.css";
 
@@ -113,3 +207,4 @@
     min-height: 100vh;
   }
 }
+
