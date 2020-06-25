@@ -77,4 +77,53 @@
         background-image: none;
     }
 
+    .login-page h3{
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .login-page p{
+        font-size: 1.2rem;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    div form{
+        width: 40%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .form{
+        border-radius: 10px;
+       
+    }
+
+    .large-screen{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .login-page img{
+        height: 144px;
+        margin-top: 100px;     
+    }
+
+    .log-container{
+        border-radius: 10px;
+        background-color: #fff;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        
+    }
+
+    .login-page{
+        background-color: #1B89EE;
+        height: 100vh;
+        padding-top: 100px
+    }
+
 }
