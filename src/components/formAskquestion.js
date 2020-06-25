@@ -25,7 +25,7 @@ const FormAskquestion = () => {
 
   return (
     <>
-      <form>
+      <form className='GlobalFormAskContainer'>
         <div className="form-group AskFormContainer">
           <label for="AskTitle">Ask your question :</label>
           <textarea className="form-control AskTextarea" rows="3" placeholder="I wonder if..."></textarea>

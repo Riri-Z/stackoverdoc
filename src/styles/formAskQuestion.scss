@@ -13,7 +13,14 @@
   align-items: center;
   margin: 1em;
   font-family: 'Ubuntu';
-  
+  box-shadow: 0 0 2em #c9d8f0;
+  width: 50%;
+}
+
+.GlobalFormAskContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .AskSubmit{
@@ -24,7 +31,7 @@
 
 .AskButtonContainer{
   display: block;
-  justify-content: flex-end;
+  justify-self: flex-end;
 }
 
 .Tagbutton{
@@ -51,6 +58,9 @@
     width: 80%;
     height: auto;
     resize: none;
+  }
+  .AskFormContainer{
+    width: 70%;
   }
 }
 

@@ -20,7 +20,7 @@ const FormTag = ({onTagAdd}) => {
   };
 
     return (
-      <form onSubmit={handleSubmit}>
+      <div onSubmit={handleSubmit}>
         <input
           className='InputTag'
           value={newTag}
@@ -29,7 +29,7 @@ const FormTag = ({onTagAdd}) => {
           placeholder="Add a tag"
         />
         <button className='AddTagButton'>+</button>
-      </form>
+      </div>
     );
   };
 
