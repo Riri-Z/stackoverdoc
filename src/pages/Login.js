@@ -10,10 +10,9 @@ class Login extends React.Component{
                     <div className='login-text'>
                         <h3>Create an account!</h3>
                         <p>Start to collaborate with us</p>
-                    </div>
-                    <FormLogin/>
+                    </div>                    
                 </div>
-                
+                <FormLogin/>             
             </div>
             
         )

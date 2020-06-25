@@ -1,5 +1,4 @@
 .login-page{
-    position: relative;
     background-image: url('../images/background.png');
     background-position: 20% 100%;
     background-repeat: no-repeat;
@@ -54,4 +53,28 @@
     &:hover {
       box-shadow: none;
     }
+}
+
+@media screen and (min-width: 550px) {
+    .login-page{
+        background-position: 20% 30%;
+    }
+
+    .buttons a{
+        margin: 0 auto;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        background-image: none;
+    }
+
+    .login-page{
+        background-image: none;
+    }
+
 }
