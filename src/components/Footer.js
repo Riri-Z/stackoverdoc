@@ -50,15 +50,23 @@ const Footer = () => {
           associated with{" "}
           <a
             className="link"
-            href="https://metmuseum.github.io/"
+            href="www.doctolib.fr"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <strong>Doctolib & Dataiku</strong>
+            <strong>Doctolib </strong>
+          </a>
+          &
+          <a
+            className="link"
+            href="https://www.dataiku.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Dataiku</strong>
           </a>
         </p>
       </div>
-      <div className="copyright"></div>
     </footer>
   );
 };

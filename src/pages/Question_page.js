@@ -16,10 +16,7 @@ const Qpages = () => {
   };
 
   return (
-    <>
-      <div>
-        <Header />
-      </div>
+    <main className="q-page">
       <div className="Corps">
         <div className="Question"></div>
         <h1>Question title</h1>
@@ -65,7 +62,7 @@ const Qpages = () => {
           </form>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

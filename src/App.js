@@ -28,7 +28,6 @@ class App extends Component {
             <Route path="/Sign-up" component={Sign_up} />
             <Route path="/profile" component={Profil} />
             <Route path="/feed" component={feed} />
-            <Route path="/ask-question" component={FormAskQuestion} />
             <Route path="/question" component={question_page} />
           </Switch>
         </Router>
