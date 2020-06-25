@@ -34,9 +34,9 @@ const questions = [
 
 
 const QuestionsList = () => (
-  <div>
+  <>
     {questions.map(item => (<Question title={item.title} avatar={item.avatar} author={item.author} text={item.text} answers={item.answers} />))}
-  </div>
+  </>
 );
 
 export default QuestionsList;
