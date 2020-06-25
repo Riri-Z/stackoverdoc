@@ -24,9 +24,9 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/login' component={Login} />
             <Route path='/Sign-up' component={Sign_up} />
-            <Route path='/Profile-page' component={Profil} />
-            <Route path='/feed-page' component={feed} />
-            <Route path='/question-page' component={question_page} />
+            <Route path='/profile' component={Profil} />
+            <Route path='/feed' component={feed} />
+            <Route path='/question' component={question_page} />
           </Switch>
         </Router>
       </div>
