@@ -3,76 +3,45 @@ import Question from "./question";
 import { useEffect } from "react";
 import fb from "../services/base";
 import { AuthContext } from "../services/Auth";
-
-/* const questions = [
-  {
-    title: "My question",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.....",
-    author: "Robert Reyes",
-    avatar: "https://randomuser.me/api/portraits/men/28.jpg",
-    answers: 30,
-  },
-  {
-    title: "My question",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.....",
-    author: "Nellie Caldwell",
-    avatar: "https://randomuser.me/api/portraits/women/17.jpg",
-    answers: 10,
-  },
-  {
-    title: "My question",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.....",
-    author: "Vernon Mason",
-    avatar: "https://randomuser.me/api/portraits/men/84.jpg",
-    answers: 0,
-  },
-  {
-    title: "My question",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.....",
-    author: "Erica Hunt",
-    avatar: "https://randomuser.me/api/portraits/women/87.jpg",
-    answers: 20,
-  },
-]; */
+import questionsfile from '../pages/questionsfile';
 
 const QuestionsList = () => {
-  const [questions, setQuestions] = useState([]);
+  // const [questions, setQuestions] = useState(questionsfile);
+  // console.log(questions)
   const currentUserUid = useContext(AuthContext);
   console.log(currentUserUid.currentUser.uid);
-  useEffect(() => {
-    const unsubscribe = fb
-      .firestore()
-      .collection("questions")
-      .onSnapshot((s) => {
-        setQuestions(
-          s.docs.map((question) => {
-            return { id: question.id, ...question.data() };
-          })
-        );
-      });
+  // useEffect(() => {
+  //   const unsubscribe = fb
+  //     .firestore()
+  //     .collection("questions")
+  //     .onSnapshot((s) => {
+  //       setQuestions(
+  //         s.docs.map((question) => {
+  //           return { id: question.id, ...question.data() };
+  //         })
+  //       );
+  //     });
 
-    return () => unsubscribe();
-  }, []);
+  //   return () => unsubscribe();
+  // }, []);
+
+  let list = questionsfile.map(
+    (item) => <Question
+          id={item.id }
+          title={item.title}
+          avatar={item.avatar}
+          author={item.author}
+          text={item.text}
+          answers={item.answers}
+        />   
+  )
   return (
     <>
-      {questions.map(
-        (item) =>
-          currentUserUid.currentUser.uid === item.user_uid && (
-            <Question
-              title={item.title}
-              avatar={item.avatar}
-              author={item.author}
-              content={item.content}
-              answers={item.answers}
-            />
-          )
-      )}
+      {list}
     </>
   );
 };
 
 export default QuestionsList;
+
+{/* currentUserUid.currentUser.uid === item.user_uid && */}

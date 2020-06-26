@@ -20,8 +20,6 @@ const App = () => {
     
       <div className="App">
         <Router>
-        {/* <Header /> */}
-        {/* <HeaderAut />  */}
           {setCurrentUser.currentUser ? <HeaderAut /> : <Header />}
           <Switch>
             <Route exact path="/" component={Home} />
@@ -29,7 +27,7 @@ const App = () => {
             <Route path="/sign-up" component={Sign_up} />
             <PrivateRoute path="/profile" component={Profil} />
             <PrivateRoute path="/feed" component={feed} />
-            <PrivateRoute path="/question" component={question_page} />
+            <PrivateRoute path="/question/:id" component={question_page} />
           </Switch>
           <Footer />
         </Router>

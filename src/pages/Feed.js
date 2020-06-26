@@ -7,7 +7,7 @@ import QuestionList from "../components/questionList";
 const Feed = () => {
   return (
     <main>
-        <FormAskquestion /* onSubmit={handleSubmit} *//>
+        <FormAskquestion />
         <QuestionList />
     </main>
   );
