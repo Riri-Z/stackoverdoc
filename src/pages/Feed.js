@@ -3,11 +3,12 @@ import "../styles/Feed.scss";
 import FormAskquestion from "../components/formAskquestion";
 import QuestionList from "../components/questionList";
 
+
 const Feed = () => {
   return (
     <main>
-      <FormAskquestion />
-      <QuestionList />
+        <FormAskquestion />
+        <QuestionList />
     </main>
   );
 };

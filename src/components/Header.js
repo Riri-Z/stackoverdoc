@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../images/TitleLogo.png";
 import whiteLogo from "../images/whiteTitleLogo.png";
 import ellipse from "../images/ellipse.png";
 import shape from "../images/shape.png";
 import "../styles/Header.scss";
 
-const Header = () => {
+const Header = (props) => {
+  const location = useLocation().pathname.substr(0);
   const [navOpened, setNavOpened] = useState(false);
   const [isHome, setIsHome] = useState(true);
 
   useEffect(() => {
-    if (window.location.pathname !== "/") {
+    if (location !== "/") {
       setIsHome(false);
     }
-  }, [isHome]);
+  }, [location]);
 
   return (
-    <header className="top-nav">
+    <header className='top-nav'>
       {isHome && (
         <picture alt='blue background' className='_sd-blue-ellipse'>
           <source srcSet={shape} media='(min-width: 768px)' />
@@ -28,22 +30,23 @@ const Header = () => {
         </picture>
       )}
       <nav className='_sd-navbar'>
-        <a className='_sd-navbar-brand' href='sof'>
+        <NavLink exact to='/' className='_sd-navbar-brand' href='sof'>
           <img src={isHome ? whiteLogo : logo} alt='stackoverdoc' />
-        </a>
+        </NavLink>
         <ul
           className={navOpened ? "_sd-navbar-menu opened" : "_sd-navbar-menu"}>
           <li>
-            <a href='fdhy' className='btn btn-primary sd-btn'>
+            <NavLink exact to='/sign-up' className='btn btn-primary sd-btn'>
               Sign Up
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href='fdhy'
+            <NavLink
+              exact
+              to='/login'
               className={isHome ? (navOpened ? "" : "_sd-white") : ""}>
               Login
-            </a>
+            </NavLink>
           </li>
         </ul>
         {navOpened && (
