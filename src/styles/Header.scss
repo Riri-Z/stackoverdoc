@@ -2,7 +2,6 @@
 @import "~bootstrap/scss/buttons";
 @import "../assets/style.css";
 
-
 ._sd-blue-ellipse {
   position: fixed;
   top: -5%;
@@ -66,6 +65,9 @@
 ._sd-navbar ._sd-navbar-menu li:nth-of-type(1) {
   margin-bottom: 16px;
 }
+._sd-navbar ._sd-navbar-menu li:nth-of-type(2) {
+  margin-bottom: 16px;
+}
 
 .btn.btn-primary.sd-btn {
   background-color: $primary-color;
@@ -77,10 +79,10 @@
   }
 }
 
-.signOutBtn{
-  border:none;
+.signOutBtn {
+  border: none;
   background-color: transparent;
-  color:#1B89EE;
+  color: #1b89ee;
 }
 
 ._sd-navbar ._sd-navbar-menu li:nth-of-type(2) a {
@@ -115,6 +117,12 @@
 @media only screen and (min-width: 1024px) {
   ._sd-navbar ._sd-navbar-menu li:nth-of-type(2) {
     margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+  ._sd-navbar ._sd-navbar-menu li:nth-of-type(3) {
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
   ._sd-navbar ._sd-navbar-menu li:nth-of-type(1) {

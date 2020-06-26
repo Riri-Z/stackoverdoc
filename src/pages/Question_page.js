@@ -22,7 +22,11 @@ const Qpages = (props) => {
         <p className="nbrVote">100</p>
         <i className="icon-caret-down" />
       </span>
-      <p className="CorpsAnswer">{i.content}</p>
+
+      <p className="CorpsAnswer">
+        <p className="AnswerAuthor">{i.author} </p>
+        {i.content}
+      </p>
     </div>
   ));
   console.log(question.answers);

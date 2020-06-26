@@ -26,7 +26,7 @@ const Login = ({ history }) => {
   const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
-    window.alert('you are already connected')
+    window.alert("you are already connected");
     return <Redirect to="/" />;
   }
 
@@ -39,7 +39,7 @@ const Login = ({ history }) => {
             <p>Start to collaborate with us</p>
           </div>
         </div>
-        <img src={Picture} alt="doctor" />
+        <img id="nurse" src={Picture} alt="doctor" />
         <div className="large-screen">
           <FormLogin onSubmit={handleLogin} />
         </div>
