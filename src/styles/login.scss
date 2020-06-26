@@ -29,6 +29,12 @@
     display: none;
 }
 
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+
+
 .login-page h3, .login-page p{
     text-align: left;
     margin-left: 10px;
@@ -40,6 +46,9 @@
     font-size: 1.2rem;
 }
 
+.form{
+    padding: 35px;
+}
 .form p{
     color: #63687B;
     text-align: center;
@@ -63,10 +72,10 @@
     margin-bottom: 50px;
   }
 
-  .buttons a{
-      transform: translateX(-20%);
+  .form-signup-container{
+      margin: 0 auto;
   }
-  
+
 
 .btn .btn-outline-primary .sd-btn-outline {
     border-radius: 10px;
@@ -77,9 +86,26 @@
     }
 }
 
+@media screen and (max-width: 550px) {
+    .form-container img{
+        display: none;
+    }
+
+    .footer{
+        position: absolute;
+    }
+    .form-container img{
+        transform: translateX(50%);
+      }
+}
+
 @media screen and (min-width: 550px) {
     .login-page{
         background-position: 20% 30%;
+    }
+
+    .login-text p{
+        color: #fff;
     }
 
     .buttons a{
@@ -87,6 +113,12 @@
         width: 250px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .log-container img{
+        margin: 0 auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -133,7 +165,7 @@
         height: 144px;
         width: 239px;
         margin-top: 30px;
-        margin-bottom: 30px;   
+        margin-bottom: 30px;  
     }
 
     .sign-container{
@@ -154,6 +186,9 @@
         padding-top: 100px
     }
     
+    .footer{
+        position: relative;
+    }
 
 }
 
