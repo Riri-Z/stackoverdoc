@@ -86,9 +86,13 @@
     }
 }
 
-@media screen and (max-width: 550px) {
-    .form-container img{
+@media screen and (max-width: 860px) {
+    .log-container img{
         display: none;
+    }
+
+    .login-text p{
+        color: #fff;
     }
 
     .footer{
@@ -105,7 +109,7 @@
     }
 
     .login-text p{
-        color: #fff;
+        color: #63687B;
     }
 
     .buttons a{
