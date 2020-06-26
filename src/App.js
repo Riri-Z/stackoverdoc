@@ -10,20 +10,19 @@ import question_page from "./pages/Question_page";
 import Footer from "./components/Footer";
 import { AuthContext } from "./services/Auth";
 import "./styles/App.scss";
-import { AuthProvider } from "./services/Auth";
 import PrivateRoute from "./services/PrivateRoute";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
-  /*   const { setCurrentUser } = useContext(AuthContext); */
+  const setCurrentUser = useContext(AuthContext);
 
   return (
-    <AuthProvider>
+    
       <div className="App">
         <Router>
-        <Header />
-        <HeaderAut /> 
-          {/* {setCurrentUser ? <HeaderAut /> : <Header />} */}
+        {/* <Header /> */}
+        {/* <HeaderAut />  */}
+          {setCurrentUser.currentUser ? <HeaderAut /> : <Header />}
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/login" component={Login} />
@@ -35,7 +34,6 @@ const App = () => {
           <Footer />
         </Router>
       </div>
-    </AuthProvider>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation} from "react-router-dom";
+import { Redirect } from "react-router";
 import logo from "../images/TitleLogo.png";
 import whiteLogo from "../images/whiteTitleLogo.png";
 import ellipse from "../images/ellipse.png";
@@ -7,6 +8,7 @@ import shape from "../images/shape.png";
 import "../styles/Header.scss";
 import app from "../services/base";
 import "../styles/Header.scss";
+
 
 const Header = (props) => {
   const location = useLocation().pathname.substr(0);
@@ -18,6 +20,13 @@ const Header = (props) => {
       setIsHome(false);
     }
   }, [location]);
+
+  const disconnect = ()=> {
+    window.alert('you are disconnected')
+    return <Redirect to="/" />;
+  }
+
+  
 
   return (
     <header className="top-nav">
@@ -55,7 +64,7 @@ const Header = (props) => {
             >
               Your profil
             </NavLink>
-            <button onClick={() => app.auth().signOut()}>Sign out</button>
+            <button onClick={() => app.auth().signOut().then(disconnect())}>Sign out</button>
           </li>
         </ul>
         {navOpened && (

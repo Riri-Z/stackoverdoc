@@ -1,10 +1,9 @@
-import React, { useCallback, useContext } from "react";
+import React, { useCallback } from "react";
 import { withRouter } from "react-router";
 import app from "../services/base";
 import FormSignUp from "../components/FormSignUp";
 import picture from "../images/background2.png";
 import "../styles/signup.scss";
-import { AuthContext } from "../services/Auth";
 
 const SignUp = ({ history }) => {
   
