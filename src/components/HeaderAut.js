@@ -22,7 +22,7 @@ const Header = (props) => {
   }, [location]);
 
   const disconnect = () => {
-    window.alert("you are disconnected");
+    window.alert("You have been disconnected");
     return <Redirect to="/" />;
   };
 

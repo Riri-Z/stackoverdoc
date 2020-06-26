@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Answer = (props) => {
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(props.rating);
   return (
     <div className="TopAnswer">
       <span className="Vote">

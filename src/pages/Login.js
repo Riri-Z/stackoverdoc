@@ -26,7 +26,7 @@ const Login = ({ history }) => {
   const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
-    window.alert("you are already connected");
+    window.alert("You are succesfully connected");
     return <Redirect to="/" />;
   }
 

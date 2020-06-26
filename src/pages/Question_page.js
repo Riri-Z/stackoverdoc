@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Answer from "../components/Answer";
 import "../styles/Qpages.scss";
 import questionfile from "./questionsfile";
 const Qpages = (props) => {
   const id = parseInt(props.match.params.id);
   console.log(id);
-  
 
   let question = questionfile.filter((i) => i.id === id)[0];
   console.log(question);
