@@ -17,21 +17,20 @@ const App = () => {
   const setCurrentUser = useContext(AuthContext);
 
   return (
-    
-      <div className="App">
-        <Router>
-          {setCurrentUser.currentUser ? <HeaderAut /> : <Header />}
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/login" component={Login} />
-            <Route path="/sign-up" component={Sign_up} />
-            <PrivateRoute path="/profile" component={Profil} />
-            <PrivateRoute path="/feed" component={feed} />
-            <PrivateRoute path="/question/:id" component={question_page} />
-          </Switch>
-          <Footer />
-        </Router>
-      </div>
+    <div className='App'>
+      <Router>
+        {setCurrentUser.currentUser ? <HeaderAut /> : <Header />}
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/login' component={Login} />
+          <Route path='/sign-up' component={Sign_up} />
+          <PrivateRoute path='/profile' component={Profil} />
+          <PrivateRoute path='/feed' component={feed} />
+          <PrivateRoute path='/question/:id' component={question_page} />
+        </Switch>
+        <Footer />
+      </Router>
+    </div>
   );
 };
 

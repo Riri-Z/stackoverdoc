@@ -1,135 +1,132 @@
-.login-page{
-    background-image: url('../images/background.png');
-    background-position: 20% 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.login-page {
+  background-image: url("../images/background.png");
+  background-position: 20% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.login-page h3{
-    font-size: 1.2rem;
+.login-page h3 {
+  font-size: 1.2rem;
 }
 
-.login-page p{
-    color: #63687B;
+.login-page p {
+  color: #63687b;
 }
 
-.bio{
-    display: none;
+.bio {
+  display: none;
 }
 
-.username{
-    display: none;
+.username {
+  display: none;
 }
 
-.specialisation{
-    display: none;
+.specialisation {
+  display: none;
 }
 
-.login-page h3, .login-page p{
-    text-align: left;
-    margin-left: 10px;
-    font-family: "Ubuntu";
+.login-page h3,
+.login-page p {
+  text-align: left;
+  margin-left: 10px;
+  font-family: "Ubuntu";
 }
 
-.login-page .login-container .login-text h3{
-    
-    font-size: 1.2rem;
+.login-page .login-container .login-text h3 {
+  font-size: 1.2rem;
 }
 
-.form p{
-    color: #63687B;
-    text-align: center;
-    margin: 10px
+.form p {
+  color: #63687b;
+  text-align: center;
+  margin: 10px;
 }
 
-.login-text{
-    padding-top: 15px;
+.login-text {
+  padding-top: 15px;
 }
 
 .btn .btn-outline-primary .sd-btn-outline {
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  
-    &:hover {
-      box-shadow: none;
-    }
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 @media screen and (min-width: 550px) {
-    .login-page{
-        background-position: 20% 30%;
-    }
+  .login-page {
+    background-position: 20% 30%;
+  }
 
-    .buttons a{
-        margin: 0 auto;
-        width: 250px;
-    }
+  .buttons a {
+    margin: 0 auto;
+    width: 250px;
+  }
 }
 
 @media screen and (min-width: 850px) {
-    .desktop{
-        display: flex;
-        flex-direction: row;
-        background-image: none;
-    }
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    background-image: none;
+  }
 
-    .login-page{
-        background-image: none;
-    }
+  .login-page {
+    background-image: none;
+  }
 
-    .login-page h3{
-        font-size: 2rem;
-        margin-top: 40px;
-        margin-left: 20px;
-        text-align: center;
-    }
+  .login-page h3 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-left: 20px;
+    text-align: center;
+  }
 
-    .login-page p{
-        font-size: 1.2rem;
-        margin-left: 20px;
-        text-align: center;
-    }
+  .login-page p {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    text-align: center;
+  }
 
-    div form{
-        width: 40%;
-        margin: 0 auto;
-        padding-top: 30px;
-    }
+  div form {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
 
-    .form{
-        border-radius: 10px;
-       
-    }
+  .form {
+    border-radius: 10px;
+  }
 
-    .large-screen{
-        display: flex;
-        flex-direction: row;
-    }
+  .large-screen {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .login-page img{
-        height: 144px;
-        margin-top: 100px;     
-    }
+  .login-page img {
+    height: 144px;
+    margin-top: 100px;
+  }
 
-    .log-container{
-        border-radius: 10px;
-        background-color: #fff;
-        width: 60%;
-        height: auto;
-        margin: 0 auto;
-        
-    }
+  .log-container {
+    border-radius: 10px;
+    background-color: #fff;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
 
-    .login-page{
-        background-color: #1B89EE;
-        height: 100vh;
-        padding-top: 100px
-    }
-
+  .login-page {
+    background-color: #1b89ee;
+    height: 100vh;
+    padding-top: 100px;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .log-container img{
-        display: none;     
-    }
+  .log-container img {
+    display: none;
+  }
 }

@@ -6,7 +6,6 @@ import picture from "../images/background2.png";
 import "../styles/signup.scss";
 
 const SignUp = ({ history }) => {
-  
   const handleSignUp = useCallback(
     async (event) => {
       event.preventDefault();
@@ -24,14 +23,14 @@ const SignUp = ({ history }) => {
   );
 
   return (
-    <div className="signup-page">
-      <div className="form-container">
-        <div className="login-text">
+    <div className='signup-page'>
+      <div className='form-container'>
+        <div className='login-text'>
           <h3>Create an account!</h3>
           <p>Start to collaborate with us</p>
         </div>
-        <img src={picture} alt="doctor" />
-        <div className="large-screen">
+        <img src={picture} alt='doctor' />
+        <div className='large-screen'>
           <FormSignUp onSubmit={handleSignUp} />
         </div>
       </div>
