@@ -1,0 +1,61 @@
+@import "./globale";
+@import "~bootstrap/scss/bootstrap";
+@import "../assets/style.css";
+
+
+.q-page {
+  min-height: 100vh;
+}
+.Corps {
+  width: 90%;
+  margin: auto;
+}
+
+.Question h1 {
+  margin-bottom: 20%;
+}
+
+.TopAnswer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.CorpsAnswer {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  text-align: left;
+}
+
+.Vote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding-right: 10%;
+}
+
+.nbrVote {
+  margin: inherit;
+}
+
+.CorpsAnswer p {
+  color: grey;
+
+  // font-weight: 300;// rendre plus claire
+}
+
+.form-answer {
+  display: flex;
+  box-shadow: 0 0 2em #c9d8f0;
+  border-radius: 10px;
+  font-family: "Ubuntu";
+}
+
+.BoxAnswer {
+  display: flex;
+  border: none;
+  border-radius: 10px;
+}

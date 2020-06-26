@@ -2,6 +2,18 @@
 @import "~bootstrap/scss/buttons";
 @import "../assets/style.css";
 
+
+._sd-blue-ellipse {
+  position: fixed;
+  top: -5%;
+  right: 0;
+  z-index: -10;
+}
+
+._sd-navbar a._sd-white {
+  color: white !important;
+}
+
 ._sd-navbar {
   position: relative;
   width: 100%;
@@ -25,7 +37,7 @@
 
 ._sd-navbar ._sd-navbar-menu.opened {
   list-style: none;
-  padding: 0;
+  text-align: center;
   margin: 0;
   background-color: whitesmoke;
   height: 100vh;
@@ -36,6 +48,7 @@
   bottom: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 40px;
   z-index: 99999;
 }
@@ -64,6 +77,12 @@
   }
 }
 
+.signOutBtn{
+  border:none;
+  background-color: transparent;
+  color:#1B89EE;
+}
+
 ._sd-navbar ._sd-navbar-menu li:nth-of-type(2) a {
   color: $primary-color;
   text-decoration: none;
@@ -75,12 +94,21 @@
   cursor: pointer;
 }
 
+._sd-navbar i.icon-menu._sd-white {
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
   ._sd-navbar ._sd-navbar-menu.opened {
     width: 45%;
   }
   .sd-overlay {
     width: 55%;
+  }
+
+  ._sd-blue-ellipse {
+    top: -20%;
+    z-index: -10;
   }
 }
 
