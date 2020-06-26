@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/form.scss";
 import Button from "./Button";
 import { AuthContext } from "../services/Auth";

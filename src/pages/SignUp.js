@@ -26,15 +26,17 @@ const SignUp = ({ history }) => {
 
   return (
     <div className="signup-page">
-      <div className="form-container">
-        <div className="login-text">
+      <div className="sign-container">
+      <div className="form-signup-container">
+        <div className="signup-text">
           <h3>Create an account!</h3>
           <p>Start to collaborate with us</p>
         </div>
         <img src={picture} alt="doctor" />
-        <div className="large-screen">
+        <div className="signup-large-screen">
           <FormSignUp onSubmit={handleSignUp} />
         </div>
+      </div>
       </div>
     </div>
   );
