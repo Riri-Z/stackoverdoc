@@ -1,33 +1,16 @@
-import React /* useState  */ from "react";
+import React, { useState } from "react";
+import Answer from "../components/Answer";
 import "../styles/Qpages.scss";
 import questionfile from "./questionsfile";
 const Qpages = (props) => {
   const id = parseInt(props.match.params.id);
   console.log(id);
-
-  /* const [tags, setTag] = useState([]);
-  const handleDelete = (id) => {
-    const updatedTags = [...tags];
-    const index = updatedTags.findIndex((tag) => tag.id === id);
-    updatedTags.splice(index, 1);
-    setTag(updatedTags);
-  }; */
+  
 
   let question = questionfile.filter((i) => i.id === id)[0];
   console.log(question);
   let answers = question.answers.map((i, index) => (
-    <div key={i.index} className="TopAnswer">
-      <span className="Vote">
-        <i className="icon-caret-up" />
-        <p className="nbrVote">100</p>
-        <i className="icon-caret-down" />
-      </span>
-
-      <p className="CorpsAnswer">
-        <p className="AnswerAuthor">{i.author} </p>
-        {i.content}
-      </p>
-    </div>
+    <Answer key={i.index} {...i} />
   ));
   console.log(question.answers);
   return (
