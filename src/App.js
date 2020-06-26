@@ -21,6 +21,8 @@ const App = () => {
     <AuthProvider>
       <div className="App">
         <Router>
+        <Header />
+        <HeaderAut /> 
           {/* {setCurrentUser ? <HeaderAut /> : <Header />} */}
           <Switch>
             <Route exact path="/" component={Home} />

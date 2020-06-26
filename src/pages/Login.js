@@ -35,7 +35,7 @@ const Login = ({ history }) => {
       <div className="log-container">
         <div className="form-container">
           <div className="login-text">
-            <h3>Create an account!</h3>
+            <h3>Connect you to your account!</h3>
             <p>Start to collaborate with us</p>
           </div>
         </div>
