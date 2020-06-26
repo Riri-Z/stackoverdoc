@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 import "../styles/formAskQuestion.scss";
 
 const Question = (props) => {
-  console.log("ok")
+  console.log("ok");
   return (
     <>
-     
       <div className="globalQuestionContainer">
         <div className="questionHeadContainer">
           <h1 className="QuestionTitle">{props.title}</h1>
@@ -17,8 +16,10 @@ const Question = (props) => {
         </div>
         <p className="questionText">{props.text}</p>
         <div className="globalAnswerContainer">
-          <p className="answersNumber">Answers: {props.answers}</p>
-          <Link  className="btn ViewMoreButton" to={`/question/${props.id}`}>View more</Link>
+          <p className="answersNumber">Answers: {props.nbanswers}</p>
+          <Link className="btn ViewMoreButton" to={`/question/${props.id}`}>
+            View more
+          </Link>
         </div>
       </div>
     </>

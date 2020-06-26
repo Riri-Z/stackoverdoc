@@ -2,13 +2,18 @@
 @import "~bootstrap/scss/bootstrap";
 @import "../assets/style.css";
 
-
 .q-page {
   min-height: 100vh;
 }
 .Corps {
   width: 90%;
   margin: auto;
+}
+.AnswerAuthor {
+  justify-content: flex-start;
+  margin-right: 20px;
+  /* margin-left: -350px; */
+  width: 100%;
 }
 
 .Question h1 {
@@ -24,7 +29,7 @@
 .CorpsAnswer {
   display: flex;
   justify-content: flex-end;
-  width: 80%;
+  width: 100%;
   text-align: left;
 }
 

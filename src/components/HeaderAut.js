@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useLocation} from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Redirect } from "react-router";
 import logo from "../images/TitleLogo.png";
 import whiteLogo from "../images/whiteTitleLogo.png";
@@ -8,7 +8,7 @@ import shape from "../images/shape.png";
 import "../styles/Header.scss";
 import app from "../services/base";
 import "../styles/Header.scss";
-
+import Button from "./Button";
 
 const Header = (props) => {
   const location = useLocation().pathname.substr(0);
@@ -21,12 +21,10 @@ const Header = (props) => {
     }
   }, [location]);
 
-  const disconnect = ()=> {
-    window.alert('you are disconnected')
+  const disconnect = () => {
+    window.alert("You have been disconnected");
     return <Redirect to="/" />;
-  }
-
-  
+  };
 
   return (
     <header className="top-nav">
@@ -64,7 +62,14 @@ const Header = (props) => {
             >
               Your profil
             </NavLink>
-            <button onClick={() => app.auth().signOut().then(disconnect())}>Sign out</button>
+          </li>
+          <li>
+            <Button
+              className="btn-signOut"
+              onClick={() => app.auth().signOut().then(disconnect())}
+            >
+              Sign out
+            </Button>
           </li>
         </ul>
         {navOpened && (

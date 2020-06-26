@@ -30,7 +30,7 @@ const SignUp = ({ history }) => {
           <h3>Create an account!</h3>
           <p>Start to collaborate with us</p>
         </div>
-        <img src={picture} alt="doctor" />
+        <img id="nurse" src={picture} alt="doctor" />
         <div className="large-screen">
           <FormSignUp onSubmit={handleSignUp} />
         </div>
