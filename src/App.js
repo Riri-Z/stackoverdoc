@@ -23,7 +23,8 @@ class App extends Component {
       <AuthProvider>
         <div className="App">       
         <Router>
-          <Header />         
+          <Header />
+          <HeaderAut />          
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/login" component={Login} />
