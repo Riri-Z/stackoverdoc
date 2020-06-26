@@ -26,20 +26,21 @@ const Login = ({ history }) => {
   const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
-    return <Redirect to='/' />;
+    console.log(currentUser);
+    return <Redirect to="/" />;
   }
 
   return (
-    <div className='login-page'>
-      <div className='log-container'>
-        <div className='form-container'>
-          <div className='login-text'>
+    <div className="login-page">
+      <div className="log-container">
+        <div className="form-container">
+          <div className="login-text">
             <h3>Create an account!</h3>
             <p>Start to collaborate with us</p>
           </div>
         </div>
-        <img src={Picture} alt='doctor' />
-        <div className='large-screen'>
+        <img src={Picture} alt="doctor" />
+        <div className="large-screen">
           <FormLogin onSubmit={handleLogin} />
         </div>
       </div>

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Question from "./question";
 import { useEffect } from "react";
 import fb from "../services/base";
+import { AuthContext } from "../services/Auth";
 
 /* const questions = [
   {
@@ -40,6 +41,8 @@ import fb from "../services/base";
 
 const QuestionsList = () => {
   const [questions, setQuestions] = useState([]);
+  const currentUserUid = useContext(AuthContext);
+  console.log(currentUserUid.currentUser.uid);
   useEffect(() => {
     const unsubscribe = fb
       .firestore()
@@ -56,15 +59,18 @@ const QuestionsList = () => {
   }, []);
   return (
     <>
-      {questions.map((item) => (
-        <Question
-          title={item.title}
-          avatar={item.avatar}
-          author={item.author}
-          content={item.content}
-          answers={item.answers}
-        />
-      ))}
+      {questions.map(
+        (item) =>
+          currentUserUid.currentUser.uid === item.user_uid && (
+            <Question
+              title={item.title}
+              avatar={item.avatar}
+              author={item.author}
+              content={item.content}
+              answers={item.answers}
+            />
+          )
+      )}
     </>
   );
 };
