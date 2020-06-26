@@ -12,6 +12,7 @@
   margin: 40px 0;
 }
 
+
 .usernameInput,
 .mailInput,
 .passwordInput,
@@ -106,6 +107,7 @@ i {
 ._sd-form {
   width: 95%;
   margin: 0 auto;
+  padding-top: 0;
 }
 
 ._sd-form .username,
@@ -198,6 +200,11 @@ i {
     width: 50%;
     position: absolute;
     left: 0;
+  }
+
+  .footer{
+    position: fixed;
+    bottom: 0;
   }
 
   ._sd-blue {

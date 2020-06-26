@@ -6,7 +6,7 @@ const FormProfil = () => {
   const currentUserUid = useContext(AuthContext);
   console.log(currentUserUid.currentUser.uid);
   return (
-    <>
+    <div className='profil-div-globale'>
       <form className="_sd-form">
         <div className="_sd-avatar">
           <img
@@ -63,7 +63,7 @@ const FormProfil = () => {
         <Button type="submit">Apply</Button>
       </form>
       <div className="_sd-blue"></div>
-    </>
+    </div>
   );
 };
 
