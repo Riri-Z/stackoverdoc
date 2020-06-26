@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Button.scss";
 
-function Button({ outline, children, onClick }) {
+function Button({ outline, children, onClick, type }) {
   return (
     <button
       className={
@@ -9,6 +9,7 @@ function Button({ outline, children, onClick }) {
           ? "btn btn-primary sd-btn"
           : "btn btn-outline-primary sd-btn-outline"
       }
+      type={type}
       onClick={onClick}>
       {children}
     </button>
