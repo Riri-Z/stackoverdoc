@@ -39,7 +39,7 @@ const Header = () => {
             <NavLink exact to='/sign-up' className='btn btn-primary sd-btn'>
               Sign Up
             </NavLink>
-            <button onClick={() => app.auth().signOut()}>Sign out</button>
+            <button className='signOutBtn' onClick={() => app.auth().signOut()}>Sign out</button>
           </li>
           <li>
             <NavLink
