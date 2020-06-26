@@ -21,12 +21,18 @@
     display: none;
 }
 
-.footer{
-    position: absolute;
-}
 
 .specialisation{
     display: none;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+
+._sd-btn{
+    margin-top: 20px;
 }
 
 .signup-page h3, .signup-page p{
@@ -40,37 +46,38 @@
     font-size: 1.2rem;
 }
 
-.signup-large-screen .form{
-    width: 100%;
+.form{
+    padding: 35px;
 }
-
 .form p{
     color: #63687B;
     text-align: center;
     margin: 10px
 }
 
+
 .signup-text{
     padding-top: 15px;
 }
 
 .mail{
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 50px;
   }
   
   .password{
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 50px;
   }
 
-  .buttons a{
-      transform: translateX(-20%);
+  .form-signup-container{
+      margin: 0 auto;
   }
-  
+
+
 
 .btn .btn-outline-primary .sd-btn-outline {
     border-radius: 10px;
@@ -81,9 +88,38 @@
     }
 }
 
+.footer{
+    position: relative;
+}
+
+@media screen and (max-width: 860px) {
+    .sign-container img{
+        display: none;
+    }
+
+    .signup-text p{
+        color: #fff;
+    }
+
+    .footer{
+        position: absolute;
+    }
+    .form-container img{
+        transform: translateX(50%);
+      }
+}
+
 @media screen and (min-width: 550px) {
     .signup-page{
         background-position: 20% 30%;
+    }
+
+    .signup-text p{
+        color: #63687B;
+    }
+
+    .footer{
+        position: absolute;
     }
 
     .buttons a{
@@ -93,8 +129,10 @@
         margin-bottom: 20px;
     }
 
-    .footer{
-        position: absolute;
+    .sign-container img{
+        margin: 0 auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -122,12 +160,8 @@
         text-align: center;
     }
 
-    .footer{
-        position: relative;
-    }
-
     div form{
-        width: 40%;
+        width: 100%;
         margin: 0 auto;
         padding-top: 30px;
     }
@@ -136,7 +170,7 @@
         border-radius: 10px;       
     }
 
-    .large-screen{
+    .signup-large-screen{
         display: flex;
         flex-direction: row;
     }
@@ -145,7 +179,7 @@
         height: 144px;
         width: 239px;
         margin-top: 30px;
-        margin-bottom: 30px;   
+        margin-bottom: 30px;  
     }
 
     .sign-container{
@@ -166,6 +200,9 @@
         padding-top: 100px
     }
     
+    .footer{
+        position: relative;
+    }
 
 }
 

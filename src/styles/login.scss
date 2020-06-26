@@ -21,9 +21,6 @@
     display: none;
 }
 
-.footer{
-    position: relative;
-}
 
 .specialisation{
     display: none;
@@ -54,6 +51,7 @@
     text-align: center;
     margin: 10px
 }
+
 
 .login-text{
     padding-top: 15px;
@@ -86,6 +84,10 @@
     }
 }
 
+.footer{
+    position: relative;
+}
+
 @media screen and (max-width: 860px) {
     .log-container img{
         display: none;
@@ -110,6 +112,10 @@
 
     .login-text p{
         color: #63687B;
+    }
+
+    .footer{
+        position: absolute;
     }
 
     .buttons a{
@@ -172,7 +178,7 @@
         margin-bottom: 30px;  
     }
 
-    .sign-container{
+    .log-container{
         border-radius: 10px;
         background-color: #fff;
         width: 60%;
